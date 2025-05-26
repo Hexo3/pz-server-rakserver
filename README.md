@@ -28,7 +28,7 @@ This guide is made using https://linuxgsm.com/servers/pzserver/
 ## Add Workshop Mods
 1. `sudo nano /home/pzserver/Zomboid/Server/pzserver.ini`
 2. Add Workshop mod IDs to `WorkshopItems=` (Example: `WorkshopItems=2200148440;2711720885`)
-3. Add Mod IDs to `Mods=` (Example: `Mods=Britas,SchizophreniaTrait`)
+3. Add Mod IDs to `Mods=` (Example: `Mods=Britas;SchizophreniaTrait`)
 
 ## Usage
 Must be in the pzserver user (`su - pzserver`)\
