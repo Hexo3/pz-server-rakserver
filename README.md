@@ -112,8 +112,10 @@ Restart=no
 WantedBy=multi-user.target
 ```
 
-7. Access from web: ip:12357
-8. Configure admin user
+7. `sudo systemctl start weblgsm.service`
+8. `sudo systemctl enable weblgsm.service`
+9. Access from web: ip:12357
+10. Configure admin user
 
 ## Add LGSM Project Zomboid server to WebUI
 
