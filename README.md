@@ -30,6 +30,10 @@ This guide is made using https://linuxgsm.com/servers/pzserver/
 2. Add Workshop mod IDs to `WorkshopItems=` (Example: `WorkshopItems=2200148440;2711720885`)
 3. Add Mod IDs to `Mods=` (Example: `Mods=Britas;SchizophreniaTrait`)
 
+## First start
+The LinuxGSM Project Zomboid server doesn't ask for a administrator password, that means the first start must be with debug mode to set a administrator password.
+- `./pzserver debug`
+
 ## Running on Boot
 1. Create a service file in `/etc/systemd/system/`
 
