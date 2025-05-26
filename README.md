@@ -54,9 +54,9 @@ Restart=no
 WantedBy=multi-user.target
 ```
 
-2. `systemctl daemon-reload`
-3. `systemctl start pzserver`
-4. `systemctl enable pzserver`
+2. `sudo systemctl daemon-reload`
+3. `sudo systemctl start pzserver`
+4. `sudo systemctl enable pzserver`
 
 ### Usage Info
 Must be in the pzserver user (`su - pzserver`)\
