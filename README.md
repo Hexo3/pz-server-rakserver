@@ -30,23 +30,6 @@ This guide is made using https://linuxgsm.com/servers/pzserver/
 2. Add Workshop mod IDs to `WorkshopItems=` (Example: `WorkshopItems=2200148440;2711720885`)
 3. Add Mod IDs to `Mods=` (Example: `Mods=Britas;SchizophreniaTrait`)
 
-## Usage
-Must be in the pzserver user (`su - pzserver`)\
-
-List all commands using: `./pzserver`
-
-### Running
-start: `./pzserver start`\
-stop: `./pzserver stop`\
-restart: `./pzserver restart`\
-console: `./pzserver console`
-
-### Updating
-update: `./pzserver update`
-
-### Debug
-debug: `./pzserver debug`
-
 ### Running on Boot
 1. Create a service file in `/etc/systemd/system/`
 
@@ -74,6 +57,23 @@ WantedBy=multi-user.target
 2. `systemctl daemon-reload`
 3. `systemctl start pzserver`
 4. `systemctl enable pzserver`
+
+## Usage Info
+Must be in the pzserver user (`su - pzserver`)\
+
+List all commands using: `./pzserver`
+
+### Running
+start: `./pzserver start`\
+stop: `./pzserver stop`\
+restart: `./pzserver restart`\
+console: `./pzserver console`
+
+### Updating
+update: `./pzserver update`
+
+### Debug
+debug: `./pzserver debug`
 
 # LinuxGSM WebUI Installation
 This guide is made using: https://github.com/BlueSquare23/web-lgsm
