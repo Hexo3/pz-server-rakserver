@@ -77,4 +77,53 @@ WantedBy=multi-user.target
 4. `systemctl enable pzserver`
 
 # LinuxGSM WebUI Installation
-This guide is made using: 
+This guide is made using: https://github.com/BlueSquare23/web-lgsm
+
+## Setup user
+1. `adduser weblgsm`
+2. `sudo usermod -aG sudo weblgsm`
+3. `su - weblgsm`
+
+## Installation
+1. `git clone https://github.com/BlueSquare23/web-lgsm.git`
+2. `cd web-lgsm`
+3. `./install.sh`
+4. `sudo cp main.conf main.conf.local`
+5. Change `host` to `0.0.0.0` (For local usage)
+6. Create a service file in `/etc/systemd/system/`
+
+`pzserver.service:`
+```
+[Unit]
+Description=LinuxGSM WebUI
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+User=weblgsm
+WorkingDirectory=/home/weblgsm
+#Assume that the service is running after main process exits with code 0
+RemainAfterExit=yes
+ExecStart=/home/weblgsm/web-lgsm/web-lgsm.py
+ExecStop=/home/weblgsm/web-lgsm/web-lgsm.py --stop
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
+```
+
+7. Access from web: ip:12357
+8. Configure admin user
+
+## Add LGSM Project Zomboid server to WebUI
+
+1. `Add an Existing LGSM Installation`
+2. Installation Title: `pzserver`
+3. Installation directory path: `/home/pzserver`
+4. LGSM script name: `pzserver`
+5. Game server system username: `pzserver`
+6. Take the public key location from the notification after adding the server. (`/home/weblgsm/.ssh/example_key.pub`)
+7. `exit`
+8. `su - pzserver`
+9. `ssh-copy-id -i ~/.ssh/example_key.pub pzserver@localhost`
