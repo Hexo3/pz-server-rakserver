@@ -91,7 +91,7 @@ This guide is made using: https://github.com/BlueSquare23/web-lgsm
 5. Change `host` to `0.0.0.0`: `sudo nano main.conf.local` (For local usage)
 6. Create a service file in `/etc/systemd/system/`
 
-`pzserver.service:`
+`weblgsm.service:`
 ```
 [Unit]
 Description=LinuxGSM WebUI
