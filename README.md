@@ -8,7 +8,7 @@
 # Server Installation
 This guide is made using https://linuxgsm.com/servers/pzserver/ 
 ## Manual Install using LinuxGSM
-1. `adduser pzserver`
+1. `sudo adduser pzserver`
 2. `sudo usermod -aG sudo pzserver`
 3. `su - pzserver`
 4. `curl -Lo linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh pzserver`
@@ -79,7 +79,7 @@ WantedBy=multi-user.target
 This guide is made using: https://github.com/BlueSquare23/web-lgsm
 
 ## Setup user
-1. `adduser weblgsm`
+1. `sudo adduser weblgsm`
 2. `sudo usermod -aG sudo weblgsm`
 3. `su - weblgsm`
 
