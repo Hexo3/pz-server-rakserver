@@ -126,5 +126,5 @@ WantedBy=multi-user.target
 5. Game server system username: `pzserver`
 6. Take the public key location from the notification after adding the server. (`/home/weblgsm/.ssh/example_key.pub`)
 7. `exit`
-8. `su - pzserver`
+8. `su - weblgsm`
 9. `ssh-copy-id -i ~/.ssh/example_key.pub pzserver@localhost`
