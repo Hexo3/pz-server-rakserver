@@ -1,4 +1,4 @@
-# pz-server-rakserver
+# Project Zomboid Server using LinuxGSM
 ## VM Hardware
 - 50 GB Disk
 - 2 Cores
