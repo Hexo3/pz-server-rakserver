@@ -127,4 +127,10 @@ WantedBy=multi-user.target
 6. Take the public key location from the notification after adding the server. (`/home/weblgsm/.ssh/example_key.pub`)
 7. `exit`
 8. `su - weblgsm`
-9. `ssh-copy-id -i ~/.ssh/example_key.pub pzserver@localhost`
+9. `cat .ssh/example_key.pub` and copy the key
+10. `exit`
+11. `su - pzserver`
+12. `sudo mkdir .ssh`
+13. `sudo nano .ssh/authorized_keys` and paste the key
+
+# Play
