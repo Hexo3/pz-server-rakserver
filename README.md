@@ -17,13 +17,19 @@ This guide is made using https://linuxgsm.com/servers/pzserver/
 ## Configure server
 1. `sudo nano /home/pzserver/lgsm/config-lgsm/pzserver/pzserver.cfg`
 2. add line: `adminpassword="secret"`
+3. Configure map: `sudo nano /home/pzserver/Zomboid/Server/pzserver.ini` Change `Map=Muldraugh, KY` to the wanted map.
+### Vanilla map choices:
+- `Muldraugh, KY`
+- `Riverside, KY`
+- `Rosewood, KY`
+- `West Point, KY`
 
 
 ## Add Workshop Mods
-
+⚠ The client must be subscribed to the mods.
 1. `sudo nano /home/pzserver/Zomboid/Server/pzserver.ini`
 2. Add Workshop mod IDs to `WorkshopItems=` (Example: `WorkshopItems=2200148440;2711720885`)
-3. Add Mod IDs to `Mods=` (Example: `Mods=BritasWeaponPack;SchizophreniaTraitMod;`)
+3. Add Mod IDs to `Mods=` (Example: `Mods=BritasWeaponPack,SchizophreniaTraitMod`)
 
 ## Usage
 Must be in the pzserver user (`su - pzserver`)\
