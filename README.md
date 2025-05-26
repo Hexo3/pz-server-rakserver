@@ -30,7 +30,7 @@ This guide is made using https://linuxgsm.com/servers/pzserver/
 2. Add Workshop mod IDs to `WorkshopItems=` (Example: `WorkshopItems=2200148440;2711720885`)
 3. Add Mod IDs to `Mods=` (Example: `Mods=Britas;SchizophreniaTrait`)
 
-### Running on Boot
+## Running on Boot
 1. Create a service file in `/etc/systemd/system/`
 
 `pzserver.service:`
@@ -58,7 +58,7 @@ WantedBy=multi-user.target
 3. `systemctl start pzserver`
 4. `systemctl enable pzserver`
 
-## Usage Info
+### Usage Info
 Must be in the pzserver user (`su - pzserver`)\
 
 List all commands using: `./pzserver`
