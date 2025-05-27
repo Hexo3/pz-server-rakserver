@@ -158,5 +158,3 @@ WantedBy=multi-user.target
 11. `su - pzserver`
 12. `sudo mkdir .ssh`
 13. `sudo nano .ssh/authorized_keys` and paste the key
-
-# Play
