@@ -1,4 +1,23 @@
 # Project Zomboid Server using LinuxGSM
+
+* [VM Hardware](#vm-hardware)
+* [Server Installation](#server-installation)
+  * [Manual Install using LinuxGSM](#manual-install-using-linux-gsm)
+  * [Configure server](#configure-server)
+    * [Vanilla map choices](#vanilla-map-choices)
+  * [Import server configurations](#import-server-configurations)
+  * [Add Workshop Mods](#add-workshop-mods)
+  * [First start](#first-start)
+  * [Running on Boot](#running-on-boot)
+    * [Usage Info](#usage-info)
+    * [Running](#running)
+    * [Updating](#updating)
+    * [Debug](#debug)
+* [LinuxGSM WebUI Installation](#linuxgsm-webui-installation)
+  * [Setup user](#setup-user)
+  * [Installation](#installation)
+  * [Add LGSM Project Zomboid server to WebUI](#add-lgsm-project-zomboid-server-to-webui)
+
 ## VM Hardware
 - 50 GB Disk
 - 2 Cores
