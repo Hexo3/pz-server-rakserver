@@ -24,6 +24,9 @@ This guide is made using https://linuxgsm.com/servers/pzserver/
 - `Rosewood, KY`
 - `West Point, KY`
 
+## Import server configurations
+You can create server configurations in the Project Zomboid server host tab and add to `/home/pzserver/Zomboid/Server/` from your local computer
+
 
 ## Add Workshop Mods
 1. `sudo nano /home/pzserver/Zomboid/Server/pzserver.ini`
