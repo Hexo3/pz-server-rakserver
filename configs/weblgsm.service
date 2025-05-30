@@ -1,0 +1,17 @@
+[Unit]
+Description=LinuxGSM WebUI
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+User=weblgsm
+WorkingDirectory=/home/weblgsm
+#Assume that the service is running after main process exits with code 0
+RemainAfterExit=yes
+ExecStart=/home/weblgsm/web-lgsm/web-lgsm.py
+ExecStop=/home/weblgsm/web-lgsm/web-lgsm.py --stop
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

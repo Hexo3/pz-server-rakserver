@@ -1,0 +1,17 @@
+[Unit]
+Description=LinuxGSM Project Zomboid Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+User=pzserver
+WorkingDirectory=/home/pzserver
+#Assume that the service is running after main process exits with code 0
+RemainAfterExit=yes
+ExecStart=/home/pzserver/pzserver start
+ExecStop=/home/pzserver/pzserver stop
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
